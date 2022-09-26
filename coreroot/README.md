@@ -7,15 +7,15 @@ Endpoint description
 
 content-type: JSON
 
-Example request body:
-
-Request body:
+### Request body:
 
 {
-    "email": <email:str>,
-    "password": <password:str>,
-    "username": <username:str>
+    "email": <<email:str>>,
+    "password": <<password:str>>,
+    "username": <<username:str>>
 }
+
+### Example request body:
 
 {
     "email": "testuser@yopmail.com",
@@ -23,19 +23,19 @@ Request body:
     "username": "testuser"
 }
 
-Response body: 
+### Response body: 
 
 {
     "user": {
-        "id": <id:int>,
-        "username": <username:str>,
-        "is_active": <is_active:bool>
+        "id": <<id:int>>,
+        "username": <<username:str>>,
+        "is_active": <<is_active:bool>>
     }
-    "refresh": <refresh_token:str>,
-    "access": <access_token:str>,
+    "refresh": <<refresh_token:str>>,
+    "access": <<access_token:str>>,
 }
 
-Example response body:
+### Example response body:
 
 {
     "user": {
@@ -51,34 +51,34 @@ Example response body:
 
 content-type: JSON
 
-Request body:
+### Request body:
 
 {
-    "email": <email:str>,
-    "password": <password:str>
+    "email": <<email:str>>,
+    "password": <<password:str>>
 }
 
-Example request body:
+### Example request body:
 
 {
     "email": "testuser@yopmail.com",
     "password": "12345678"
 }
 
-Response body: 
+### Response body: 
 
 {
-    "refresh": <refresh_token:str>,
-    "access": <access_token:str>,
+    "refresh": <<refresh_token:str>>,
+    "access": <<access_token:str>>,
     "user": {
-        "id": <id:int>,
-        "username": <username:str>,
-        "email": <email:str>,
-        "is_active": <is_active:bool>
+        "id": <<id:int>>,
+        "username": <<username:str>>,
+        "email": <<email:str>>,
+        "is_active": <<is_active:bool>>
     }
 }
 
-Example response body:
+### Example response body:
 
 {
     "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NDI3MDM4OCwiaWF0IjoxNjY0MTgzOTg4LCJqdGkiOiI4ZjQ0YmNiYzE1YWQ0MzFkODQ2YTUzNGQyMjQ0MzYxYiIsInVzZXJfaWQiOjJ9.CZnlTNoAYN5K8CyLfs5_NK76SCDMHy4GUPxv0QwAbWQ",
@@ -95,25 +95,25 @@ Example response body:
 
 content-type: JSON
 
-Request body:
+### Request body:
 
 {
-    "refresh": <refresh_token:str>
+    "refresh": <<refresh_token:str>>
 }
 
-Example request body:
+### Example request body:
 
 {
     "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NDI3MDM4OCwiaWF0IjoxNjY0MTgzOTg4LCJqdGkiOiI4ZjQ0YmNiYzE1YWQ0MzFkODQ2YTUzNGQyMjQ0MzYxYiIsInVzZXJfaWQiOjJ9.CZnlTNoAYN5K8CyLfs5_NK76SCDMHy4GUPxv0QwAbWQ"
 }
 
-Response body:
+### Response body:
 
 {
-    "access": <access_token:str>
+    "access": <<access_token:str>>
 }
 
-Example response body:
+### Example response body:
 
 {
     "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY0MTg0NDA3LCJpYXQiOjE2NjQxODM5ODgsImp0aSI6IjBkYjEwNjM1YjRiYzQ2ODhhMTc4OWQ0ZDZhZDU5NGJkIiwidXNlcl9pZCI6Mn0.tbE7EJu2BjQ_Gvwn0LqfMkpSNCHIAvRYsEF5F1_mLh0"
