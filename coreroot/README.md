@@ -53,43 +53,43 @@ content-type: JSON
 
 ### Request body:
 
-{
-    "email": \<email:str\>,
-    "password": \<password:str\>
-}
+{<br/>
+    "email": \<email:str\>,<br/>
+    "password": \<password:str\><br/>
+}<br/>
 
 ### Example request body:
 
-{
-    "email": "testuser@yopmail.com",
-    "password": "12345678"
-}
+{<br/>
+    "email": "testuser@yopmail.com",<br/>
+    "password": "12345678"<br/>
+}<br/>
 
 ### Response body: 
 
-{
-    "refresh": \<refresh_token:str\>,
-    "access": \<access_token:str\>,
-    "user": {
-        "id": \<id:int\>,
-        "username": \<username:str\>,
-        "email": \<email:str\>,
-        "is_active": \<is_active:bool\>
-    }
-}
+{<br/>
+    "refresh": \<refresh_token:str\>,<br/>
+    "access": \<access_token:str\>,<br/>
+    "user": {<br/>
+        "id": \<id:int\>,<br/>
+        "username": \<username:str\>,<br/>
+        "email": \<email:str\>,<br/>
+        "is_active": \<is_active:bool\><br/>
+    }<br/>
+}<br/>
 
 ### Example response body:
 
-{
-    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NDI3MDM4OCwiaWF0IjoxNjY0MTgzOTg4LCJqdGkiOiI4ZjQ0YmNiYzE1YWQ0MzFkODQ2YTUzNGQyMjQ0MzYxYiIsInVzZXJfaWQiOjJ9.CZnlTNoAYN5K8CyLfs5_NK76SCDMHy4GUPxv0QwAbWQ",
-    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY0MTg0Mjg4LCJpYXQiOjE2NjQxODM5ODgsImp0aSI6IjRiNTIxNjc5YTU3OTRhNTBiMDQ3YzBhNWE4ZGEwN2RjIiwidXNlcl9pZCI6Mn0.TP3TwfSh44NFY7TwE448NEOCYJeWv3eMwt3Jo3SvRno",
-    "user": {
-        "id": 0,
-        "username": "testuser",
-        "email": "testuser@yopmail.com",
-        "is_active": true
-    }
-}
+{<br/>
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NDI3MDM4OCwiaWF0IjoxNjY0MTgzOTg4LCJqdGkiOiI4ZjQ0YmNiYzE1YWQ0MzFkODQ2YTUzNGQyMjQ0MzYxYiIsInVzZXJfaWQiOjJ9.CZnlTNoAYN5K8CyLfs5_NK76SCDMHy4GUPxv0QwAbWQ",<br/>
+    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY0MTg0Mjg4LCJpYXQiOjE2NjQxODM5ODgsImp0aSI6IjRiNTIxNjc5YTU3OTRhNTBiMDQ3YzBhNWE4ZGEwN2RjIiwidXNlcl9pZCI6Mn0.TP3TwfSh44NFY7TwE448NEOCYJeWv3eMwt3Jo3SvRno",<br/>
+    "user": {<br/>
+        "id": 0,<br/>
+        "username": "testuser",<br/>
+        "email": "testuser@yopmail.com",<br/>
+        "is_active": true<br/>
+    }<br/>
+}<br/>
 
 # api/auth/refresh
 
@@ -97,24 +97,24 @@ content-type: JSON
 
 ### Request body:
 
-{
-    "refresh": \<refresh_token:str\>
-}
+{<br/>
+    "refresh": \<refresh_token:str\><br/>
+}<br/>
 
 ### Example request body:
 
-{
-    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NDI3MDM4OCwiaWF0IjoxNjY0MTgzOTg4LCJqdGkiOiI4ZjQ0YmNiYzE1YWQ0MzFkODQ2YTUzNGQyMjQ0MzYxYiIsInVzZXJfaWQiOjJ9.CZnlTNoAYN5K8CyLfs5_NK76SCDMHy4GUPxv0QwAbWQ"
-}
+{<br/>
+    "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NDI3MDM4OCwiaWF0IjoxNjY0MTgzOTg4LCJqdGkiOiI4ZjQ0YmNiYzE1YWQ0MzFkODQ2YTUzNGQyMjQ0MzYxYiIsInVzZXJfaWQiOjJ9.CZnlTNoAYN5K8CyLfs5_NK76SCDMHy4GUPxv0QwAbWQ"<br/>
+}<br/>
 
 ### Response body:
 
-{
-    "access": \<access_token:str\>
-}
+{<br/>
+    "access": \<access_token:str\><br/>
+}<br/>
 
 ### Example response body:
 
-{
-    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY0MTg0NDA3LCJpYXQiOjE2NjQxODM5ODgsImp0aSI6IjBkYjEwNjM1YjRiYzQ2ODhhMTc4OWQ0ZDZhZDU5NGJkIiwidXNlcl9pZCI6Mn0.tbE7EJu2BjQ_Gvwn0LqfMkpSNCHIAvRYsEF5F1_mLh0"
-}
+{<br/>
+    "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY0MTg0NDA3LCJpYXQiOjE2NjQxODM5ODgsImp0aSI6IjBkYjEwNjM1YjRiYzQ2ODhhMTc4OWQ0ZDZhZDU5NGJkIiwidXNlcl9pZCI6Mn0.tbE7EJu2BjQ_Gvwn0LqfMkpSNCHIAvRYsEF5F1_mLh0"<br/>
+}<br/>
