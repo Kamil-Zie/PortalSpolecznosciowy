@@ -10,9 +10,9 @@ content-type: JSON
 ### Request body:
 
 {
-    "email": <<email:str>>,
-    "password": <<password:str>>,
-    "username": <<username:str>>
+    "email": \<email:str\>,
+    "password": \<password:str\>,
+    "username": \<username:str\>
 }
 
 ### Example request body:
@@ -27,12 +27,12 @@ content-type: JSON
 
 {
     "user": {
-        "id": <<id:int>>,
-        "username": <<username:str>>,
-        "is_active": <<is_active:bool>>
+        "id": \<id:int\>,
+        "username": \<username:str\>,
+        "is_active": \<is_active:bool\>
     }
-    "refresh": <<refresh_token:str>>,
-    "access": <<access_token:str>>,
+    "refresh": \<refresh_token:str\>,
+    "access": \<access_token:str\>,
 }
 
 ### Example response body:
@@ -54,8 +54,8 @@ content-type: JSON
 ### Request body:
 
 {
-    "email": <<email:str>>,
-    "password": <<password:str>>
+    "email": \<email:str\>,
+    "password": \<password:str\>
 }
 
 ### Example request body:
@@ -68,13 +68,13 @@ content-type: JSON
 ### Response body: 
 
 {
-    "refresh": <<refresh_token:str>>,
-    "access": <<access_token:str>>,
+    "refresh": \<refresh_token:str\>,
+    "access": \<access_token:str\>,
     "user": {
-        "id": <<id:int>>,
-        "username": <<username:str>>,
-        "email": <<email:str>>,
-        "is_active": <<is_active:bool>>
+        "id": \<id:int\>,
+        "username": \<username:str\>,
+        "email": \<email:str\>,
+        "is_active": \<is_active:bool\>
     }
 }
 
@@ -98,7 +98,7 @@ content-type: JSON
 ### Request body:
 
 {
-    "refresh": <<refresh_token:str>>
+    "refresh": \<refresh_token:str\>
 }
 
 ### Example request body:
@@ -110,7 +110,7 @@ content-type: JSON
 ### Response body:
 
 {
-    "access": <<access_token:str>>
+    "access": \<access_token:str\>
 }
 
 ### Example response body:
