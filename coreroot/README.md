@@ -1,1 +1,0 @@
-https://dev.to/koladev/django-rest-authentication-cmh#:~:text=Front%2Dend%20with%20React
