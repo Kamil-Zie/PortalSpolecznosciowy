@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap');
+
+.project-title{
+  font-family:'Jost';
+  font-style: normal;
+  font-size: 64px;
+  margin-top:15vh;
+  margin-left:7vw;
+  width:60%;
+}
+.project-desc{
+  font-family: 'Jost';
+  font-style: normal;
+  color: #707070;
+  width:40%;
+  margin-left:7vw;
+  margin-top:5vh;
+  font-size: 20px;
+}
+.project-button{
+  background: #546EF3;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0px 20px 25px rgba(217, 217, 217, 0.4);
+  border-radius: 24px;
+  width: 255px;
+  height: 74px;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 74px;
+  color: #FFFFFF;
+  text-align:center;
+  margin-left:7vw;
+  margin-top:2vh;
+}

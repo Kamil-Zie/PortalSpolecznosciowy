@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap');
+*{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.sign-buttons{
+  display:flex;
+  margin-top:5vh;
+  margin-left:2vw;
+}
+.button{
+  width:87px;
+  height:40px;
+  text-align:center;
+  line-height:40px;
+  border-radius:12px;
+  font-family:'Jost';
+  font-style: normal;
+  font-weight: 700;
+}
+.sign-up{
+  background-color:#fff;
+}
+.sign-in{
+  background-color:#000;
+  color:#fff;
+}

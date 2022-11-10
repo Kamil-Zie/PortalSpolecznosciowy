@@ -1,0 +1,16 @@
+*{
+  margin:0;
+  padding:0;
+}
+.main{
+  display:flex;  
+}
+
+.left-block,.right-block{
+  width:50vw;
+  height:100vh;
+}
+.right-block{
+  background-image: url("./src/assets/images/right-panel.svg");
+  background-size:contain;
+}
