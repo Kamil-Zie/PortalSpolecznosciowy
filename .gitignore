@@ -3,3 +3,7 @@ node_modules
 dist
 dist-ssr
 *.local
+vite.config.js
+vite.config.js.*
+tsconfig.json
+tsconfig.node.json
