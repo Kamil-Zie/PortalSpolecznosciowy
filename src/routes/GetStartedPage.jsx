@@ -2,7 +2,9 @@ const GetStarted = () => {
   return (
     <>
       <div>
-        
+        <div className="functionality-desc">
+          
+        </div>
       </div>
     </>
   );

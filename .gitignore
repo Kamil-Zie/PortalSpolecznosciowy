@@ -7,3 +7,5 @@ vite.config.js
 vite.config.js.*
 tsconfig.json
 tsconfig.node.json
+.replit
+replit.nix

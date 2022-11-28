@@ -17,11 +17,28 @@
   font-family:'Jost';
   font-style: normal;
   font-weight: 700;
+  cursor: pointer;
+  margin-left: 2vw;
+  user-select: none;
+  box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 1);
 }
 .sign-up{
   background-color:#fff;
+  transition: 0.3s;
 }
+
+.sign-up:hover{
+  background-color: #f0f0f0;
+}
+
 .sign-in{
   background-color:#000;
+  color:#fff;
+  transition: 0.3s;
+}
+
+.sign-in:hover
+{
+  background-color:#2b2b2b;
   color:#fff;
 }

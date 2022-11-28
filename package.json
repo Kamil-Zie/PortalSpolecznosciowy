@@ -12,6 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "css-modules": "^0.3.0",
+    "helmet": "^6.0.0",
+    "react-css-modules": "^4.7.11",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.4.2",
     "reactjs-popup": "^2.0.5",
     "sass": "^1.55.0"
