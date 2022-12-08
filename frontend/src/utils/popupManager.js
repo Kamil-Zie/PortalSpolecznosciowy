@@ -19,12 +19,12 @@ const PopupManager = (props) =>
     if(props.show)
     {
         return(
-            <>
-                <div className={`${styles.background} ${fade ? styles.fadeOut : styles.fadeIn}`} onClick={() => setFade(true)} onAnimationEnd={() => onClose()} />
+            <div className={fade ? styles.fadeOut : styles.fadeIn} onAnimationEnd={() => onClose()}>
+                <div className={styles.background} onClick={() => setFade(true)}/>
                 <div className={styles.content}>
                     {props.children}
                 </div>
-            </>
+            </div>
         )
     }
     else

@@ -7,6 +7,7 @@
 // import SignInPopup from '../components/signInPopup';
 // import LoginPopUp from '../components/login/Login';
 import PopupManager from '../utils/popupManager';
+import Login from '../components/login/login';
 import React, { useState, useEffect, } from 'react';
 // import { useNavigate } from 'react-router-dom';
 const Home = () => {
@@ -19,10 +20,11 @@ const Home = () => {
 
   return (
     <>
-    <button onClick={() => setPopup(true)}>ABC</button>
+    <Login></Login>
+    {/* <button onClick={() => setPopup(true)}>ABC</button>
     <PopupManager show={popupShown} onClose={() => setPopup(false)}>
-      <p>OK</p>
-    </PopupManager>
+      <Login />
+    </PopupManager> */}
       {/* {popupSignin ? <LoginPopUp onClose={setPopupSignIn} isInShown={isInShown} setInShown={setInShown}  ></LoginPopUp> : <></>} */}
 
       {/* {popupSignup ? <LoginPopUp onClose={setPopupSignUp} isInShown={isUpShown} setInShown={setUpShown} /> : <></>} */}
