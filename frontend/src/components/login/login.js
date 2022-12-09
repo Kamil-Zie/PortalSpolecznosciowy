@@ -8,7 +8,7 @@ const Login = (props) => {
   console.log(styles.main)
   return (
     <div className={styles.main}>
-      <div className={styles.appAside} />
+      {/* <div className={styles.appAside} /> */}
       <div className={styles.appForm}>
         <div className={styles.pageSwitcher}>
           <NavLink

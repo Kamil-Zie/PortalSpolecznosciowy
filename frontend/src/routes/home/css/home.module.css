@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap');
+
+.signButtons{
+  display:flex;
+  margin-top:5vh;
+  margin-left:2vw;
+}
+.button{
+  width:87px;
+  height:40px;
+  text-align:center;
+  line-height:40px;
+  border-radius:12px;
+  font-family:'Jost';
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 2vw;
+  user-select: none;
+  box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUp{
+  background-color:#fff;
+  transition: 0.3s;
+}
+
+.signUp:hover{
+  background-color: #f0f0f0;
+}
+
+.signIn{
+  background-color:#000;
+  color:#fff;
+  transition: 0.3s;
+}
+
+.signIn:hover
+{
+  background-color:#2b2b2b;
+  color:#fff;
+}
+
+.leftBlock,.rightBlock{
+    width:50vw;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.rightBlock{
+background-image: url("../../../assets/images/right-panel.svg");
+background-size:contain;
+}
+
+.projectTitle{
+    font-family:'Jost';
+    font-style: normal;
+    font-size: 64px;
+    margin-top:15vh;
+    margin-left:7vw;
+    width:60%;
+  }
+  .projectDesc{
+    font-family: 'Jost';
+    font-style: normal;
+    color: #707070;
+    width:40%;
+    margin-left:7vw;
+    margin-top:5vh;
+    font-size: 20px;
+  }
+  .projectButton{
+    background: #546EF3;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0px 20px 25px rgba(217, 217, 217, 0.4);
+    border-radius: 24px;
+    width: 255px;
+    height: 74px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 74px;
+    color: #FFFFFF;
+    text-align:center;
+    margin-left:7vw;
+    margin-top:2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

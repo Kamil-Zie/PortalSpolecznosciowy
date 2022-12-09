@@ -20,12 +20,13 @@ const SlideManager = (props) =>
     if(props.show)
     {
         return(
-            <div>
-                <div className={styles.background} onClick={() => setFade(true)} onAnimationEnd={() => onClose()}/>
-                <div className={styles.slide}>
-                    {props.children}
-                </div>
-            </div>
+            // <div>
+            //     <div className={styles.background} onClick={() => setFade(true)} onAnimationEnd={() => onClose()}/>
+            //     <div className={styles.slide}>
+            //         {props.children}
+            //     </div>
+            // </div>
+            <>{props.children}</>
             // <div className={fade ? styles.fadeOut : styles.fadeIn} onAnimationEnd={() => onClose()}>
             //     <div className={styles.content}>
             //         {props.children}
