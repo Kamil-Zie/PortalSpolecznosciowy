@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { Route, NavLink, Routes, Outlet } from "react-router-dom";
+import React from 'react';
+import { NavLink, Outlet } from "react-router-dom";
 import styles from "./css/login.module.css"
-import SignUpForm from "./pages/SignUpForm";
-import SignInForm from "./pages/SignInForm";
 
 const Login = (props) => {
   console.log(styles.main)

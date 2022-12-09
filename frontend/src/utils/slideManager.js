@@ -3,41 +3,11 @@ import styles from '../static/css/slideManager.module.css'
 
 const SlideManager = (props) =>
 {
-    const [slide, setSlide] = useState(false)
-    const [fade, setFade] = useState(false)
-
-    useEffect(() => {
-        setSlide(false);
-    }, [props.show])
-
-    const onClose = () => {
-        if(fade)
-        {
-            props.onClose();
-        }
-    }
-
-    if(props.show)
-    {
-        return(
-            // <div>
-            //     <div className={styles.background} onClick={() => setFade(true)} onAnimationEnd={() => onClose()}/>
-            //     <div className={styles.slide}>
-            //         {props.children}
-            //     </div>
-            // </div>
-            <>{props.children}</>
-            // <div className={fade ? styles.fadeOut : styles.fadeIn} onAnimationEnd={() => onClose()}>
-            //     <div className={styles.content}>
-            //         {props.children}
-            //     </div>
-            // </div>
-        )
-    }
-    else
-    {
-        return(<></>)
-    }
+    return(
+        <div className={styles.slideIn}>
+            {props.children}
+        </div>
+    )
 }
 
 export default SlideManager

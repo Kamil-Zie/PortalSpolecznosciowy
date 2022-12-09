@@ -1,4 +1,5 @@
 import PopupManager from '../../utils/popupManager';
+import SlideManager from '../../utils/slideManager';
 import Login from '../../components/login/login';
 import styles from './css/home.module.css'
 import { useNavigate } from "react-router-dom";
@@ -34,7 +35,9 @@ const Home = () => {
         </div>
     <div className={styles.rightBlock}></div>
     <PopupManager show={popupShown} onClose={() => {navigate("/"); setPopup(false)}}>
-      <Login></Login>
+      <SlideManager>
+        <Login/>
+      </SlideManager>
     </PopupManager>
     
     </>

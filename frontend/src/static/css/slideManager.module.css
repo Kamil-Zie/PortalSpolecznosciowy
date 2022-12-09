@@ -1,0 +1,23 @@
+.slideIn{
+    position: absolute;
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.slideOut{
+    position: absolute;
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn{
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+@keyframes slideOut{
+    from {left: 0vw;}
+    to {left: -100vw;}
+}
