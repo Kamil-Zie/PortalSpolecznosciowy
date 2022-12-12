@@ -1,43 +1,33 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../css/login.module.css"
+import { registerRequest } from "../../../managers/loginManager";
 
-class SignUpForm extends Component {
-  constructor() {
-    super();
+const SignUpForm = () => {
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [name, setName] = useState("")
+  const [hasAgreed, setAgreed] = useState("false")
 
-    this.state = {
-      email: "",
-      password: "",
-      name: "",
-      hasAgreed: false
-    };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+  const onSuccess = () =>
+  {
+    console.log("req")
   }
 
-  handleChange(event) {
-    let target = event.target;
-    let value = target.type === "checkbox" ? target.checked : target.value;
-    let name = target.name;
-
-    this.setState({
-      [name]: value
-    });
+  const onFailure = () =>
+  {
+    console.log('fail')
   }
 
-  handleSubmit(e) {
-    e.preventDefault();
-
-    console.log("The form was submitted with the following data:");
-    console.log(this.state);
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    registerRequest(name, email, password, onSuccess, onFailure)
+    console.log('dupa')
   }
 
-  render() {
     return (
-      <div className={styles.formCenter}>
-        <form onSubmit={this.handleSubmit} className={styles.formFields}>
+      <div className={styles.formCenter} onSubmit={(event) => handleSubmit(event)}>
+        <form className={styles.formFields}>
           <div className={styles.formField}>
             <label className={styles.formFieldLabel} htmlFor="name">
               Full Name
@@ -48,8 +38,8 @@ class SignUpForm extends Component {
               className={styles.formFieldInput}
               placeholder="Enter your full name"
               name="name"
-              value={this.state.name}
-              onChange={this.handleChange}
+              value={name}
+              onChange={(event) => setName(event.target.value)}
             />
           </div>
           <div className={styles.formField}>
@@ -62,8 +52,8 @@ class SignUpForm extends Component {
               className={styles.formFieldInput}
               placeholder="Enter your password"
               name="password"
-              value={this.state.password}
-              onChange={this.handleChange}
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
             />
           </div>
           <div className={styles.formField}>
@@ -76,8 +66,8 @@ class SignUpForm extends Component {
               className={styles.formFieldInput}
               placeholder="Enter your email"
               name="email"
-              value={this.state.email}
-              onChange={this.handleChange}
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
             />
           </div>
 
@@ -87,8 +77,8 @@ class SignUpForm extends Component {
                 className={styles.formFieldCheckbox}
                 type="checkbox"
                 name="hasAgreed"
-                value={this.state.hasAgreed}
-                onChange={this.handleChange}
+                value={hasAgreed}
+                onChange={(event) => setAgreed(event.target.value)}
               />{" "}
               I agree all statements in{" "}
               <a href="null" className={styles.formFieldTermsLink}>
@@ -107,5 +97,5 @@ class SignUpForm extends Component {
       </div>
     );
   }
-}
+
 export default SignUpForm;
