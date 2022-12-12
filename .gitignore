@@ -9,3 +9,4 @@ tsconfig.json
 tsconfig.node.json
 .replit
 replit.nix
+/backend/venv

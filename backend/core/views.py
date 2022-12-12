@@ -8,20 +8,20 @@ from .models import S_User
 @csrf_exempt
 @require_http_methods(["POST"])
 def login(request):
-    mail = request.POST.get('mail', False)
+    email = request.POST.get('email', False)
     password = request.POST.get('password', False)
-    if(mail and password):
-        user = S_User.objects.get(mail=mail, password=password)
+    if(email and password):
+        user = S_User.objects.get(email=email, password=password)
         return JsonResponse({'user':user.id})
     return JsonResponse({'user':None})
 
 @csrf_exempt
 @require_http_methods(["POST"])
 def register(request):
-    mail = request.POST.get('mail', False)
+    email = request.POST.get('email', False)
     password = request.POST.get('password', False)
-    if(mail and password):
-        user = S_User(mail=mail, password=password)
+    if(email and password):
+        user = S_User(email=email, password=password)
         user.save()
         return JsonResponse({'user':user.id})
     return JsonResponse({'user':None})

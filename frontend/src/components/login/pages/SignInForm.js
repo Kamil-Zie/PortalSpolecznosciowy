@@ -1,41 +1,31 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link, useHref } from "react-router-dom";
 import styles from "../css/login.module.css"
+import { loginRequest } from "../../../managers/loginManager"
+import { useNavigate } from "react-router-dom";
 
-class SignInForm extends Component {
-  constructor() {
-    super();
+const SignInForm = () => {
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
-    this.state = {
-      email: "",
-      password: ""
-    };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+  const onSuccess = () =>
+  {
+    console.log("req")
   }
 
-  handleChange(event) {
-    let target = event.target;
-    let value = target.type === "checkbox" ? target.checked : target.value;
-    let name = target.name;
-
-    this.setState({
-      [name]: value
-    });
+  const onFailure = () =>
+  {
+    console.log('fail')
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
-
-    console.log("The form was submitted with the following data:");
-    console.log(this.state);
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    loginRequest(email, password, onSuccess, onFailure)
   }
 
-  render() {
     return (
       <div className={styles.formCenter}>
-        <form className={styles.formFields} onSubmit={this.handleSubmit}>
+        <form className={styles.formFields} onSubmit={(event) => handleSubmit(event)}>
           <div className={styles.formField}>
             <label className={styles.formFieldLabel} htmlFor="email">
               E-Mail Address
@@ -46,8 +36,8 @@ class SignInForm extends Component {
               className={styles.formFieldInput}
               placeholder="Enter your email"
               name="email"
-              value={this.state.email}
-              onChange={this.handleChange}
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
             />
           </div>
 
@@ -61,8 +51,8 @@ class SignInForm extends Component {
               className={styles.formFieldInput}
               placeholder="Enter your password"
               name="password"
-              value={this.state.password}
-              onChange={this.handleChange}
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
             />
           </div>
 
@@ -86,6 +76,5 @@ class SignInForm extends Component {
       </div>
     );
   }
-}
 
 export default SignInForm;
