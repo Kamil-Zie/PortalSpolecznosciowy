@@ -4,6 +4,8 @@ import Login from '../../components/login/login';
 import styles from './css/home.module.css'
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect, } from 'react';
+import { AuthGuard } from '../../managers/authManager';
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 const Home = () => {
@@ -12,6 +14,10 @@ const Home = () => {
 
   return (
     <>
+    <ReCAPTCHA
+    sitekey="6LegOncjAAAAAKdtFFfpd3rYbJO2HGGPt5qtSnM0"
+    onChange={() => {}}
+    />
     <div className={styles.leftBlock}>
           <div className={styles.signButtons}>
             <div className={`${styles.button} ${styles.signUp}`} onClick={() => {navigate("/login/sign-up"); setPopup(true)}}>
