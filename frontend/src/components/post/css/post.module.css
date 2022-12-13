@@ -1,0 +1,60 @@
+.postBlock{
+    background-color: #E1EBFB;
+    width: 610px;
+    height: 360px;
+    border-radius: 3px;
+}
+.postContent{
+    display: flex;
+    flex-direction: row;
+}
+.postInfoDesc{
+    width: 350px;
+}
+.postProfilePic{
+    background-image: url('../images/profilePic.png');
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+}
+.postInfo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.postOwnerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.postDate{
+    font-size: 10px;
+}
+.postDate>p, .postOwnerName>p{
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.postOwnerName{
+    font-weight: bold;
+    font-size: 24px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.postDesc{
+    display: flex;
+    justify-content: end;
+}
+.postDesc>div{
+    margin-right: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    width: 260px;
+}
+.postImage{
+    background-image: url('../images/samplePhoto.png');
+    background-size: cover;
+    width: 270px;
+    height: 360px;
+}
