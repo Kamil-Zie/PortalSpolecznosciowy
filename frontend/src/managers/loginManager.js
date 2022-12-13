@@ -8,7 +8,7 @@ async function loginRequest(email, password, onSuccess, onFailure)
         'Accept': 'application/json',
         'Content-Type': 'application/json'
         },
-        body: {email: email, password: password}
+        body: JSON.stringify({email: email, password: password})
     })
     .then((data) => data.json())
     .then((data) => console.log(data));
@@ -24,7 +24,7 @@ async function registerRequest(name, email, password, onSuccess, onFailure)
         'Accept': 'application/json',
         'Content-Type': 'application/json'
         },
-        body: {email: email, password: password}
+        body: JSON.stringify({email: email, password: password})
     })
     .then((data) => data.json())
     .then((data) => console.log(data));
