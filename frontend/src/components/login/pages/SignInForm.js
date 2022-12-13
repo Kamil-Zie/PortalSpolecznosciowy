@@ -8,14 +8,16 @@ const SignInForm = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-  const onSuccess = () =>
+  const [error, setError] = useState(false)
+
+  const onSuccess = (data) =>
   {
     console.log("req")
   }
 
-  const onFailure = () =>
+  const onFailure = (data) =>
   {
-    console.log('fail')
+    setError(true)
   }
 
   const handleSubmit = (event) => {
@@ -27,6 +29,7 @@ const SignInForm = () => {
       <div className={styles.formCenter}>
         <form className={styles.formFields} onSubmit={(event) => handleSubmit(event)}>
           <div className={styles.formField}>
+            {error ? <p color="red">Invalid credentials</p> : <></>}
             <label className={styles.formFieldLabel} htmlFor="email">
               E-Mail Address
             </label>
