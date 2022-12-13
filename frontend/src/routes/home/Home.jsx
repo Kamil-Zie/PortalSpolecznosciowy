@@ -29,7 +29,7 @@ const Home = () => {
           <div className={styles.projectDesc}>
             <p>Już dzisiaj sprawdź co dzieje się w Twojej szkole. Twórz grupy z innymi użytkownikami i zdobywaj nowe kontakty!</p>
           </div>
-          <div className={styles.projectButton}>
+          <div className={styles.projectButton} onClick={() => {navigate("../getstarted");}}>
             <p>Get Started</p>
           </div>
         </div>
