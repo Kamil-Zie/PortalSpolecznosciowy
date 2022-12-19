@@ -4,6 +4,9 @@
     height: 360px;
     border-radius: 3px;
 }
+.postBlock{
+    margin-top:20px;
+}
 .postContent{
     display: flex;
     flex-direction: row;
@@ -57,4 +60,7 @@
     background-size: cover;
     width: 270px;
     height: 360px;
+}
+.blured{
+    filter: blur(4px);
 }

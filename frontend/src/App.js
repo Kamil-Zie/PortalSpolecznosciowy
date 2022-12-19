@@ -22,7 +22,10 @@ function App() {
               <Route path="sign-in" element={<SignInForm/>}/>
               <Route path="sign-up" element={<SignUpForm/>}/>
             </Route>
-            <Route path="getstarted/" element={<GetStarted/>}></Route>
+            <Route path="getstarted/*" element={<GetStarted/>}>
+              <Route path="sign-in" element={<SignInForm/>}/>
+              <Route path="sign-up" element={<SignUpForm/>}/>
+            </Route>
         </Routes>
       </AuthContext.Provider>
     </BrowserRouter>

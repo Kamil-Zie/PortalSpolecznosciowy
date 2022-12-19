@@ -1,72 +1,178 @@
 .switch {
-    width: 50px;
-    height: 25px;
-  }
-  .themeArrowImage{
-    background-image: url('../images/arrowBlack.svg');
-    background-size:contain;
-    width: 177px;
-    height: 177px;
-  }
-  .changeThemeDesc{
-    color: black;
-    font-size: 20px;
-    width: 200px;
-    margin-top: 130px;
-  }
-  .changeTheme{
-    display: flex;
-    flex-direction: column;
-  }
-  .arrowPlacement{
-    display: flex;
-    flex-direction: row;
-  }
-  .posts{
-    display: flex;
-    flex-direction: row;
-    margin-top: 70px;
-    margin-left: 250px;
-  }
-  .postsDesc{
-    color:#5280F5;
-    width: 170px;
-    font-size: 20px;
-  }
-  .postsArrowImage{
-    background-image: url('../images/arrowDashed.svg');
-    background-size:contain;
-    width: 177px;
-    height: 177px;
-  }
-  .themeFriends{
-    display: flex;
-    flex-direction: row;
-  }
-  .newFriendsDesc{
-    margin-top:40px;
-    color:#5280F5;
-    width: 180px;
-    font-size: 20px;
-  }
-  .newFriends{
-    display: flex;
-    margin-left:50px;
-    margin-top:60px;
-  }
-  .newFriendsArrow{ 
-    background-image: url('../images/arrowFriends.svg');
-    background-size:contain;
-    width: 177px;
-    height: 177px;
-  }
-  .newFriendsSampleSearch{
-    margin-top: 30px;
-  }
-  .postBlock{
-    display: flex;
-    flex-direction: row;
-  }
-  .postsField{
-    
-  }
+  width: 50px;
+  height: 25px;
+}
+.themeArrowImage{
+  background-image: url('../images/arrowBlack.svg');
+  background-size:contain;
+  width: 177px;
+  height: 177px;
+}
+.changeThemeDesc{
+  color: black;
+  font-size: 20px;
+  width: 200px;
+  margin-top: 130px;
+}
+.changeTheme{
+  display: flex;
+  flex-direction: column;
+}
+.arrowPlacement{
+  display: flex;
+  flex-direction: row;
+}
+.posts{
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  margin-left: 250px;
+}
+.postsDesc{
+  color:#5280F5;
+  width: 170px;
+  font-size: 20px;
+}
+.postsArrowImage{
+  background-image: url('../images/arrowDashed.svg');
+  background-size:contain;
+  width: 177px;
+  height: 177px;
+}
+.themeFriendsProfile{
+  display: flex;
+  flex-direction: row;
+}
+.newFriendsDesc{
+  margin-top:40px;
+  color:#5280F5;
+  width: 180px;
+  font-size: 20px;
+}
+.newFriends{
+  display: flex;
+  margin-left:50px;
+  margin-top:60px;
+}
+.newFriendsArrow{ 
+  background-image: url('../images/arrowFriends.svg');
+  background-size:contain;
+  width: 177px;
+  height: 177px;
+}
+.newFriendsSampleSearch{
+  margin-top: 30px;
+}
+.postBlock{
+  display: flex;
+  flex-direction: row;
+}
+.postsField{
+  display: flex;
+  flex-direction: column;
+}
+.profileBlock{
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+.profileDesc{
+  width: 150px;
+  font-size: 15px;
+  border: 2px dashed #ECECEC;
+  border-radius: 10px;
+}
+.profileImage{
+  background-image: url('../images/profilePic.svg');
+  background-size:contain;
+  width: 70px;
+  height: 70px;
+}
+.accountManagmentContacts{
+  display: flex;
+  flex-direction: column;
+}
+.accountManagment{
+  display: flex;
+  justify-content: row;
+}
+.accountMangmentDesc{
+  font-size: 40px;
+  width: 130px;
+  margin-left:50px;
+}
+.accountMangmentImage{
+  background-position: 0 30px;
+  background-repeat: no-repeat;
+  background-image: url('../images/arrowAccount.svg');
+  background-size:contain;
+  width: 150px;
+  height: 150px;
+}
+.accountManagmentButtons{
+  display:flex;
+  margin-top:50px;
+  margin-right:100px;
+  height: 50px;
+  align-items: center;
+}
+.button{
+  width:87px;
+  height:40px;
+  text-align:center;
+  line-height:40px;
+  border-radius:12px;
+  font-family:'Jost';
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 2vw;
+  user-select: none;
+  box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUp{
+  background-color:#fff;
+  transition: 0.3s;
+}
+
+.signUp:hover{
+  background-color: #f0f0f0;
+}
+
+.signIn{
+  background-color:#000;
+  color:#fff;
+  transition: 0.3s;
+}
+
+.signIn:hover
+{
+  background-color:#2b2b2b;
+  color:#fff;
+}
+.contactBlock{
+  display: flex;
+  margin-left: auto;
+}
+.contactDescBlock{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.contactArrow{
+  background-image: url('../images/arrowContact.svg');
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+.contactDesc{
+  width: 140px;
+}
+.contactList{
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.07);
+  border-radius: 50px 0px 0px 50px;
+  padding-top: 30px;
+}
