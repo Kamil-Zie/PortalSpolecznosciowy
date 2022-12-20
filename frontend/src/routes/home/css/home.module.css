@@ -5,6 +5,11 @@
   margin-top:5vh;
   margin-left:2vw;
 }
+
+.mainBlock{
+  display: flex;
+}
+
 .button{
   width:87px;
   height:40px;

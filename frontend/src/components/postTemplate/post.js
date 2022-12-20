@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './css/post.module.css';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import {pink} from '@mui/material/colors';
 const Post = (props) => {
+    const number = 23;
     return (
         <>
         <div className={`${props.isBlured?(styles.blured):""}`}>
@@ -26,8 +30,12 @@ const Post = (props) => {
                             </div>
                         </div>
                         <div className={`${styles.postLikesBlock}`}>
-                            <div className={`${styles.postLikeIcon}`}></div>
-                            <div className={`${styles.postLikeValue}`}></div>
+                            <div className={`${styles.postLikeIcon}`}>
+                                <FavoriteIcon sx={{color:pink[300]}} className={`${styles.FavIco}`}/>
+                            </div>
+                            <div className={`${styles.postLikeValue}`}>
+                                <p>{number}</p>
+                            </div>
                         </div>
                     </div>
                     <div className={`${styles.postImage}`}>

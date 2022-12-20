@@ -64,3 +64,24 @@
 .blured{
     filter: blur(4px);
 }
+.postLikesBlock{
+    display: flex;
+    margin-left:40px;
+}
+.postLikeIcon{
+  width: 80px;
+  height: 80px;
+}
+.postLikeValue>p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.postLikeValue{
+    color: #FBA6A9;
+    font-size: 32px;
+    height: 45px;
+    width: auto;
+}
+.FavIco{
+    transform: scale(1.8);
+}
